@@ -42,6 +42,7 @@ public class Quiz : MonoBehaviour
     void GetNextQuestion()
     {
         SetButtonState(true);
+        SetDefaultButtonSprite();
         DisplayQuestion();
     }
 
@@ -63,6 +64,15 @@ public class Quiz : MonoBehaviour
         {
             Button button = answerButtons[i].GetComponent<Button>();
             button.interactable = state;
+        }
+    }
+
+    void SetDefaultButtonSprite()
+    {
+        for (int i = 0; i < answerButtons.Length; i++)
+        {
+            buttonImage = answerButtons[i].GetComponent<Image>();
+            buttonImage.sprite = defaultAnswerSprite;
         }
     }
 }
