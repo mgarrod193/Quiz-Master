@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b0bfa0ca566f2d48abeaa279bc8a001, type: 3}
   m_Name: New Question 4
   m_EditorClassIdentifier: 
-  question: Enter new question text
+  question: She was wokring on her computer with her baby next to ________.
+  answers:
+  - herself
+  - her own
+  - her
+  - hers
+  correctAnswerIndex: 0

@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b0bfa0ca566f2d48abeaa279bc8a001, type: 3}
   m_Name: New Question
   m_EditorClassIdentifier: 
-  question: Enter new question text
+  question: I'm very happy _________ live in Vietnam. I really miss being there.
+  answers:
+  - to live
+  - to have lived
+  - to be lived
+  - to be living
+  correctAnswerIndex: 1

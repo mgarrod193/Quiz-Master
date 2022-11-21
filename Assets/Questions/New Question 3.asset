@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b0bfa0ca566f2d48abeaa279bc8a001, type: 3}
   m_Name: New Question 3
   m_EditorClassIdentifier: 
-  question: Enter new question text
+  question: The woman, who has been missing for 10 days, is believed ___________.
+  answers:
+  - to be abducted
+  - to be abducting
+  - to have been abducted
+  - to have been abducting
+  correctAnswerIndex: 2
