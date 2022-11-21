@@ -15,17 +15,10 @@ public class Quiz : MonoBehaviour
     [SerializeField] Sprite correctAnswerSprite;
     void Start()
     {
-        questionText.text = question.GetQuestion();
-
-
-        for (int i = 0; i < answerButtons.Length; i++)
-        {
-            TextMeshProUGUI buttonText = answerButtons[i].GetComponentInChildren<TextMeshProUGUI>();
-            buttonText.text = question.GetAnswer(i);
-        }
+        DisplayQuestion();
     }
 
-    public void onAnswerSelected(int index)
+    public void OnAnswerSelected(int index)
     {
         if (index == question.GetCorrectAnswerIndex())
         {
@@ -40,6 +33,18 @@ public class Quiz : MonoBehaviour
             questionText.text = "Sorry the correct answer was;\n" + correctAnswer;
             buttonImage = answerButtons[correctAnswerIndex].GetComponent<Image>();
 
+        }
+    }
+
+    void DisplayQuestion()
+    {
+        questionText.text = question.GetQuestion();
+
+
+        for (int i = 0; i < answerButtons.Length; i++)
+        {
+            TextMeshProUGUI buttonText = answerButtons[i].GetComponentInChildren<TextMeshProUGUI>();
+            buttonText.text = question.GetAnswer(i);
         }
     }
 }
