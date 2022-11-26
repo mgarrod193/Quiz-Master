@@ -923,7 +923,7 @@ MonoBehaviour:
   defaultAnswerSprite: {fileID: 21300000, guid: df676690c3ee8c847ab16227f391afad, type: 3}
   correctAnswerSprite: {fileID: 21300000, guid: 5f8d33feb13880d40a703a93251be633, type: 3}
   timerImage: {fileID: 1407426699}
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 1181065716}
   progressBar: {fileID: 1090732015}
   isComplete: 0
 --- !u!1 &598037303
@@ -2385,7 +2385,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1961197563
 MonoBehaviour:
   m_ObjectHideFlags: 0

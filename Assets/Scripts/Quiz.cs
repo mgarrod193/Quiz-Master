@@ -60,6 +60,7 @@ public class Quiz : MonoBehaviour
             DisplayAnswer(-1);
             SetButtonState(false);
         }
+
     }
 
     public void OnAnswerSelected(int index)
@@ -87,7 +88,7 @@ public class Quiz : MonoBehaviour
             string correctAnswer = currentQuestion.GetAnswer(correctAnswerIndex);
             questionText.text = "Sorry the correct answer was;\n" + correctAnswer;
             buttonImage = answerButtons[correctAnswerIndex].GetComponent<Image>();
-
+            buttonImage.sprite = correctAnswerSprite;
         }
     }
     void GetNextQuestion()
